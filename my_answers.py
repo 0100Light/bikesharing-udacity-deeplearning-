@@ -48,7 +48,7 @@ class NeuralNetwork(object):
             X: features batch
 
         '''
-        #### Implement the forward pass here ####
+
         ### Forward pass ###
 
         # Hidden layer
@@ -73,7 +73,7 @@ class NeuralNetwork(object):
             delta_weights_h_o: change in weights from hidden to output layers
 
         '''
-        #### Implement the backward pass here ####
+
         ### Backward pass ###
 
         error = y - final_outputs
@@ -109,7 +109,7 @@ class NeuralNetwork(object):
 
         X = features
 
-        #### Implement the forward pass here ####
+        ### Forward Pass ###
         # Hidden layer
         hidden_inputs = np.dot(X, self.weights_input_to_hidden)  # signals into hidden layer
         hidden_outputs = self.activation_function(hidden_inputs)  # signals from hidden layer
@@ -121,7 +121,7 @@ class NeuralNetwork(object):
 
 
 #########################################################
-# Set your hyperparameters here
+# Set hyperparameters
 ##########################################################
 iterations = 6000
 learning_rate = 0.75
